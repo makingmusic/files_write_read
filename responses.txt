@@ -21,3 +21,6 @@ paper
 rock
 paper
 scissors
+rock
+scissors
+paper
