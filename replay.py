@@ -2,9 +2,9 @@ import random
 from common_functions import * # import all functions from common_functions.py
 
 numTimesComputerWon = 0
-numTimesPlayerWon = 0
-numTimesTie = 0
-numTimesPlayed = 0
+numTimesPlayerWon   = 0
+numTimesTie         = 0
+numTimesPlayed      = 0
 
 fr = open("/Users/makingmusic/Desktop/code/files_write_read/responses.txt", "r")
 responses = fr.readlines()
