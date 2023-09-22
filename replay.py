@@ -18,30 +18,24 @@ for response in responses:
     playerChoiceStr = response
     computerChoiceStr = responseStrings[computerChoice]
     playerChoice = responseStrings.index(playerChoiceStr)
-    #print("You chose " + playerChoiceStr)
-    #print("Computer chose " + computerChoiceStr)
-    # determine winner
+    
     numTimesPlayed += 1
     whoWon = whoWins(playerChoice, computerChoice)
     if (whoWon == -1):
         print("Something went wrong. p = ", playerChoice, " c = ", computerChoice)
     
     if (whoWon == 0):
-        #print("Tie!")
         numTimesTie += 1
     elif (whoWon == 1):
-        #print("Player wins!")
         numTimesPlayerWon += 1
     elif (whoWon == 2):
-        #print("Computer wins!")
         numTimesComputerWon += 1
 
-ratioPlayerWin = round(numTimesPlayerWon / numTimesPlayed, 2)
-ratioComputerWin = round(numTimesComputerWon / numTimesPlayed, 2)
-ratioTie = round(numTimesTie / numTimesPlayed, 2)
+ratioPlayerWin = round(numTimesPlayerWon / numTimesPlayed, 4)
+ratioComputerWin = round(numTimesComputerWon / numTimesPlayed, 4)
+ratioTie = round(numTimesTie / numTimesPlayed, 4)
 
 print ("Played " + str(numTimesPlayed) + " times.")
-#print ("Player [" + str(numTimesPlayerWon) + "] Computer [" + str(numTimesComputerWon) + "] Tie [" + str(numTimesTie) + "]")
 print ("Player  : " + str(ratioPlayerWin))
 print ("Computer: " + str(ratioComputerWin))
 print ("Tie     : " + str(ratioTie))
