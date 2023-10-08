@@ -1,3 +1,6 @@
+# this program analyzes the results of the past games of rock paper scissors
+# it shares the final statistics of the games played so far
+
 import random
 from common_functions import * # import all functions from common_functions.py
 
